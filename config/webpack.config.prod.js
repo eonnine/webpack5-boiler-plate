@@ -1,14 +1,15 @@
 const path = require('path');
+
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 const webpack = require('webpack');
 const { merge } = require('webpack-merge');
-const TerserPlugin = require('terser-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CopyPlugin = require('copy-webpack-plugin');
 
-const baseConfig = require('./webpack.config.base.js');
 const { SRC, DIST, PUBLIC, ENV } = require('./pathMap');
+const baseConfig = require('./webpack.config.base.js');
 
 module.exports = merge(baseConfig, {
   mode: 'production',

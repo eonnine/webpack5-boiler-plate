@@ -1,5 +1,5 @@
 {
-  "name": "vue-with-webpack",
+  "name": "webpack5-boiler-plate",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,8 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack serve --config ./config/webpack.config.dev.js",
     "build": "webpack --config ./config/webpack.config.prod.js",
-    "lint": "eslint --fix ./src",
-    "lint:watch": "esw -w --fix ./src"
+    "lint": "eslint --fix src",
+    "lint:watch": "esw -w --fix src"
   },
   "keywords": [],
   "author": "",
@@ -24,6 +24,7 @@
     "css-loader": "^6.5.1",
     "eslint": "^8.7.0",
     "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-watch": "^8.0.0",
     "eslint-webpack-plugin": "^3.1.1",
