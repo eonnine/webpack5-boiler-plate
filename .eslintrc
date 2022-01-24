@@ -39,6 +39,7 @@
         },
         "newlines-between": "always"
       }
-    ]
+    ],
+    "import/no-unresolved": 0 // to use alias absolute path
   }
 }
