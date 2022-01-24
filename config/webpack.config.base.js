@@ -10,6 +10,7 @@ module.exports = {
     publicPath: PUBLIC_PATH,
   },
   resolve: {
+    extensions: ['.js', '.json'],
     modules: [SRC, 'node_modules'],
     alias: {
       '@': SRC,
