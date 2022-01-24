@@ -18,6 +18,17 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: [['@babel/preset-env']],
+            plugins: [['@babel/plugin-transform-runtime', { corejs: 3 }]],
+          },
+        },
+      },
+      {
         test: /\.(png|svg|jpg|jpeg|gif)$/,
         type: 'asset',
       },
