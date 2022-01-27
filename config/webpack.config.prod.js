@@ -55,6 +55,7 @@ module.exports = merge(baseConfig, {
         },
       ],
     }),
+    new MiniCssExtractPlugin(),
     new webpack.DefinePlugin({
       'process.env': path.resolve(ENV, 'prod.js'),
     }),
